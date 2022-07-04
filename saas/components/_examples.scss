@@ -1,0 +1,38 @@
+.work-examples {
+    padding-top: 0;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.work-examples__list {
+    
+    display: flex;
+}
+
+.work-examples__item {
+    height: 294px;
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0
+    }
+}
+
+.work-examples__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    @include font(700, 14px, calc(16/14), 0.03em);
+    
+    padding: 27px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+}
