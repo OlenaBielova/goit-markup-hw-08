@@ -25,13 +25,10 @@
 
 .footer__item {
     padding-left: 0;
-    width: 276px;
 
     @include desktop {
-
     padding-left: 70px;
     }
-    
 }
 
 .footer__item-first {
@@ -107,11 +104,12 @@
 }
 
 .socials__icon-box--footer {
+    display: flex;
+    justify-content: center;
+    
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
     
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);

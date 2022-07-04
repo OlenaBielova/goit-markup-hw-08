@@ -48,7 +48,7 @@ height: 100%;
     @include tablet {
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        
         background-color: #ffffff;
         height: 100%;
         width: 100%;
@@ -144,7 +144,7 @@ gap: 32px;
 
 .contacts {
 display: flex;
-align-items: center;
+justify-content: center;
 color: var(--primary-text-color);
    
     @media screen and (max-width:767px) {
@@ -160,6 +160,7 @@ color: var(--primary-text-color);
     
     @include desktop {
     flex-direction: row;
+    align-items: center;
     gap: 30px;
     }
 }
