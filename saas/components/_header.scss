@@ -41,26 +41,24 @@ height: 100%;
 
             padding: 40px;
             background-color: #ffffff;
-            height: 100vh;
         }
     }
 
     @include tablet {
         display: flex;
         justify-content: space-between;
-        
-        background-color: #ffffff;
         height: 100%;
         width: 100%;
+        background-color: #ffffff;
     }
 }
 
 .mob-menu-btn {
+    display: inline-block;
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 1;
-    display: inline-block;
     width: 40px;
     height: 40px;
     margin: 0;
@@ -86,9 +84,7 @@ height: 100%;
 }
 
 .site-nav {
-    .current-page {
-            color: var(--accent-color);
-        }
+
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -106,21 +102,23 @@ gap: 32px;
         // padding-top: 32px;
         // padding-bottom: 32px;
 
-        .current-page:after {
-                content: " ";
-                position: absolute;
-                bottom: -33px;
-                display: block;
-                width: 100%;
-                height: 4px;
-        
-                background: var(--accent-color);
-                border-radius: 2px;
-            }
-    }
-    
     @include desktop {
         margin-left: 93px;
+    }
+
+        .current-page {
+            color: var(--accent-color);
+        }
+        .current-page:after {
+            content: " ";
+            position: absolute;
+            bottom: -33px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
     }
 }
 
@@ -146,7 +144,7 @@ gap: 32px;
 display: flex;
 justify-content: center;
 color: var(--primary-text-color);
-   
+
     @media screen and (max-width:767px) {
             flex-direction: column-reverse;
             align-items: flex-start;
@@ -201,10 +199,6 @@ color: var(--primary-text-color);
             @include font(500, 14px, calc(16/14), 0.02em);
         }
 }
-
-// .contacts__item:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 .contacts__icon {
     margin-right: 10px;

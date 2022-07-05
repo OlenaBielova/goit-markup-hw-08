@@ -6,10 +6,11 @@
 
 .features__item {
     max-width: 450px;
-        @include tablet {
+        
+    @include tablet {
             max-width: 354px;
         }
-        @include desktop {
+    @include desktop {
             max-width: 270px;
         }
 }
