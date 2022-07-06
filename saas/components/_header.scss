@@ -27,10 +27,14 @@ height: 100%;
 
 .menu-container {
     @media screen and (max-width: 767px) {
+        
+        height: 100vh;
         display: none;
+
 
         &.is-open {
             display: flex;
+            
             flex-direction: column;
             gap: 64px;
 
