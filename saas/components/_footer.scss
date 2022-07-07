@@ -46,10 +46,17 @@
 .footer__item-last {
     padding: 0;
     max-width: 450px;
-    @include desktop {
+
+        @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
         margin-left: auto;
-        width: 663px;}
-    
+        }
+        @include desktop {
+            margin-left: auto;
+            width: 663px;
+        }
 }
 
 .footer__logo {
