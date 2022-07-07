@@ -54,8 +54,8 @@
         margin-left: auto;
         }
         @include desktop {
+            max-width: 663px;
             margin-left: auto;
-            width: 663px;
         }
 }
 

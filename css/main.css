@@ -132,6 +132,10 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     display: none;
   }
@@ -144,10 +148,6 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 64px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding: 40px;
     background-color: #ffffff;
   }
@@ -866,8 +866,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__item-last {
+    max-width: 663px;
     margin-left: auto;
-    width: 663px;
   }
 }
 

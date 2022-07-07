@@ -27,21 +27,18 @@ height: 100%;
 
 .menu-container {
     @media screen and (max-width: 767px) {
-        
-        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;height: 100vh;
         display: none;
 
 
         &.is-open {
             display: flex;
-            
             flex-direction: column;
             gap: 64px;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+            
 
             padding: 40px;
             background-color: #ffffff;
@@ -103,8 +100,6 @@ gap: 32px;
         flex-direction: row;    
         align-items: center;
         gap: 50px;
-        // padding-top: 32px;
-        // padding-bottom: 32px;
 
     @include desktop {
         margin-left: 93px;
